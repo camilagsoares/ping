@@ -11,8 +11,21 @@ import { AiOutlineInstagram } from 'react-icons/ai'
 import { ButtonsSocials } from '../styles/styled'
 import { Credits } from '../styles/styled'
 import { Animated, FadeAnimations } from 'animated-styled-components'
+import useForm from '../hooks/useForm'
 
 const Home = () => {
+
+    const [form, onChange, clear] = useForm({email: ""})
+
+
+    const onSubmitForm = (event) => {
+        event.preventDefault()
+        clear()
+
+        alert("Registered successfully!")
+    }
+
+
     return (
         <div>
 
@@ -39,7 +52,7 @@ const Home = () => {
             >
 
                 <Title>
-                    <h1>We are lauching</h1> <h1 className="soonBlack"> soon!</h1>
+                    <h1>We are lauching</h1> <h1 className='soonBlack'> soon!</h1>
                 </Title>
 
             </Animated>
@@ -48,10 +61,6 @@ const Home = () => {
                 <p>Subscribe and get notified</p>
             </Description>
 
-            <ContainerInput>
-                <input placeholder="Your email address" />
-                <button>Notify me</button>
-            </ContainerInput>
 
             <Animated
                 animation={{
@@ -59,6 +68,23 @@ const Home = () => {
                     duration_in: 2
                 }}
             >
+            <ContainerInput>
+                <form onSubmit={onSubmitForm}>
+             
+                <input placeholder='Your email address' 
+                name={'email'}
+                value={form.email}
+                onChange={onChange}
+                required
+                type={"email"}
+                />
+
+                <button type={'submit'}>Notify me</button>
+
+                </form>
+            </ContainerInput>
+
+        
 
                 <ContainerPicture>
                     <img src={dashboard} />
