@@ -9,9 +9,6 @@
 ## Sobre o desafio
 O desafio Ping Coming Soon Page foi criado pelo site <a href="https://www.frontendmentor.io/">Frontend Mentor</a>. O objetivo do desafio é reproduzir o layout com as tecnologias desejadas.
 
-## Sobre o projeto
-Projeto responsivo sobre o filme Chihiro.
-
 
 ## 💻 Preview
 
