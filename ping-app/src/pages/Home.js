@@ -93,26 +93,32 @@ const Home = () => {
             </Animated>
 
             <ButtonsSocials>
+                <a href="https://pt-br.facebook.com/" target="_blank">
                 <button>
                     <FaFacebookF
                         color={"#4E7DF2"}
                         size={20}
                     />
                 </button>
+                </a>
 
+                <a href="https://twitter.com/" target="_blank">
                 <button>
                     <AiOutlineTwitter
                         size={24}
                         color={"#4E7DF2"}
                     />
                 </button>
-
+                </a>
+                    
+                <a href="https://www.instagram.com/" target="_blank">
                 <button>
                     <AiOutlineInstagram
                         color={"#4E7DF2"}
                         size={24}
                     />
                 </button>
+                </a>
 
             </ButtonsSocials>
 
