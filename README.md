@@ -1,5 +1,5 @@
 <h1 align="center">
-<br> Ping 💻 </h1>
+<br> Ping 📉 </h1>
  
 
 <p align="center">
