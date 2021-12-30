@@ -61,7 +61,6 @@ const Home = () => {
                 <p>Subscribe and get notified</p>
             </Description>
 
-
             <Animated
                 animation={{
                     in: FadeAnimations.FadeInLeft,
@@ -79,6 +78,7 @@ const Home = () => {
                 type={"email"}
                 />
 
+  
                 <button type={'submit'}>Notify me</button>
 
                 </form>
