@@ -10,20 +10,42 @@ import { AiOutlineTwitter } from 'react-icons/ai'
 import { AiOutlineInstagram } from 'react-icons/ai'
 import { ButtonsSocials } from '../styles/styled'
 import { Credits } from '../styles/styled'
+import { Animated, FadeAnimations } from 'animated-styled-components'
 
 const Home = () => {
     return (
         <div>
-            <Logo>
-                <img src={logo} />
-            </Logo>
 
-            <Title>
-               <h1>We are lauching</h1> <h1 className="soonBlack"> soon!</h1>
-            </Title>
+            <Animated
+                animation={{
+                    in: FadeAnimations.FadeInTop,
+                    duration_in: 1
+                }}
+            >
+
+                <Logo>
+                    <img src={logo} />
+                </Logo>
+
+            </Animated>
+
+
+            <Animated
+                animation={{
+                    // delay_in: 6,
+                    in: FadeAnimations.FadeInBottom,
+                    duration_in: 1
+                }}
+            >
+
+                <Title>
+                    <h1>We are lauching</h1> <h1 className="soonBlack"> soon!</h1>
+                </Title>
+
+            </Animated>
 
             <Description>
-                <p>Subscribe and get notified</p> 
+                <p>Subscribe and get notified</p>
             </Description>
 
             <ContainerInput>
@@ -31,36 +53,45 @@ const Home = () => {
                 <button>Notify me</button>
             </ContainerInput>
 
-            <ContainerPicture>
-            <img src={dashboard}/> 
-            </ContainerPicture>
-       
+            <Animated
+                animation={{
+                    in: FadeAnimations.FadeInLeft,
+                    duration_in: 2
+                }}
+            >
+
+                <ContainerPicture>
+                    <img src={dashboard} />
+                </ContainerPicture>
+
+            </Animated>
+
             <ButtonsSocials>
-            <button>
-                <FaFacebookF
-                color={"#4E7DF2"}
-                size={20}
-                />
-            </button>
+                <button>
+                    <FaFacebookF
+                        color={"#4E7DF2"}
+                        size={20}
+                    />
+                </button>
 
-            <button>
-                <AiOutlineTwitter 
-                size={24}
-                color={"#4E7DF2"}
-                />
-            </button>
+                <button>
+                    <AiOutlineTwitter
+                        size={24}
+                        color={"#4E7DF2"}
+                    />
+                </button>
 
-            <button>
-                <AiOutlineInstagram 
-                color={"#4E7DF2"}
-                size={24}
-                />
-            </button>
+                <button>
+                    <AiOutlineInstagram
+                        color={"#4E7DF2"}
+                        size={24}
+                    />
+                </button>
 
             </ButtonsSocials>
 
             <Credits>
-            <p>© Copyright Ping. All rights reserved.</p>
+                <p>© Copyright Ping. All rights reserved.</p>
             </Credits>
         </div>
     )

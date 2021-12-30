@@ -154,7 +154,7 @@ img{
    img{
        width: 90%;
        position: relative;
-    top: 20vw;
+    top: 25vw;
    }
 }
 `
@@ -179,7 +179,7 @@ button{
 
 @media screen and (max-width: 600px){
     position: relative;
-    top: 80vw;
+    top: 75vw;
 }
 
 `
